@@ -29,15 +29,19 @@ pnpm install
 ## usage
 
 1. place your images containing qr codes in the `input` directory
+
 2. run the scanner:
+
 ```bash
 pnpm start
 ```
+
 3. check the results in `qr_results.txt`
 
 ## how it works
 
 the tool uses:
+
 - `jimp` for image processing
 - `jsqr` for qr code detection
 - concurrent processing based on available cpu cores
