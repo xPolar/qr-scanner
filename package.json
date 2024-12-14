@@ -1,0 +1,30 @@
+{
+  "name": "qr-scanner",
+  "version": "1.0.0",
+  "description": "tool to scan all qr codes in a directory",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
+      "biome check --write --no-errors-on-unmatched"
+    ]
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "jimp": "^0.22.10",
+    "jsqr": "^1.4.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "^20.10.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.3.3"
+  }
+}
